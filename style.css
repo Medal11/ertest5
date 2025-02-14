@@ -1,0 +1,103 @@
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f06, #48c6ef);
+}
+
+/* Centering container for login/chat/game screens */
+.centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for input fields */
+.inputField {
+    margin: 10px 0;
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.inputField:focus {
+    border-color: #48c6ef;
+    outline: none;
+}
+
+/* Button styling */
+button {
+    background-color: #48c6ef;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #f06;
+}
+
+/* Specific button styles for different buttons */
+.loginButton {
+    background-color: #48c6ef;
+}
+
+.sendButton {
+    background-color: #48c6ef;
+}
+
+.gameButton {
+    background-color: #f06;
+}
+
+/* Chat box */
+#chatBox {
+    width: 300px;
+    height: 200px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Message formatting */
+#chatBox div {
+    margin-bottom: 5px;
+}
+
+/* Result messages for games */
+.resultMessage {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Game button styles */
+.gameButton {
+    background-color: #48c6ef;
+    padding: 10px 20px;
+    margin: 5px;
+}
