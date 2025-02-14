@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElevenRes Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Login Screen -->
+    <div id="loginScreen" class="centered">
+        <h1>Welcome to ElevenRes</h1>
+        <input type="text" id="username" placeholder="Enter your username" class="inputField">
+        <input type="password" id="password" placeholder="Enter your password" class="inputField">
+        <!-- Inline event handler for login button -->
+        <button id="loginButton" class="loginButton">Login</button>
+    </div>
+
+    <!-- Chat Screen -->
+    <div id="chatScreen" style="display:none;">
+        <div id="chatBox"></div>
+        <input type="text" id="chatInput" placeholder="Type a message" onkeydown="sendMessage(event)" class="inputField">
+        <button onclick="sendMessage()" class="sendButton">Send</button>
+        <div id="gameButtons">
+            <button onclick="startRockPaperScissors()" class="gameButton">Rock Paper Scissors</button>
+            <button onclick="startSpeedClicking()" class="gameButton">Speed Clicking</button>
+        </div>
+    </div>
+
+    <!-- Rock Paper Scissors -->
+    <div id="rockPaperScissors" style="display:none;">
+        <button onclick="playRPS('rock')" class="gameButton">Rock</button>
+        <button onclick="playRPS('paper')" class="gameButton">Paper</button>
+        <button onclick="playRPS('scissors')" class="gameButton">Scissors</button>
+        <div id="rpsResult" class="resultMessage"></div>
+    </div>
+
+    <!-- Speed Clicking -->
+    <div id="speedClicking" style="display:none;">
+        <button id="clickButton" onclick="incrementClick()" class="gameButton">Click Me!</button>
+        <p>Clicks: <span id="clickCount">0</span></p>
+        <p id="winnerMessage" class="resultMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
